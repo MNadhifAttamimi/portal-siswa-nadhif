@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #1877F2; /* Warna biru Facebook */
+}
+
+.page {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none; /* Sembunyikan semua halaman awalnya */
+}
+
+.page.active {
+    display: block; /* Tampilkan halaman yang aktif */
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #1877F2; /* Warna biru Facebook */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.next-button {
+    background: #42B72A; /* Warna hijau Facebook */
+    margin-top: 10px;
+}
+
+#response {
+    margin-top: 20px;
+    color: #1877F2;
+}

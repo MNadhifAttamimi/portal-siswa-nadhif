@@ -4,6 +4,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
+app.use(express.static('public'));
 
 const users = []; // Objek untuk menyimpan data pengguna
 

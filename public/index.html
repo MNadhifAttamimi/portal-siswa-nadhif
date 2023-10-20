@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Portal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div class="page active" id="page-register">
+        <h2>Daftar Siswa</h2>
+        <form id="register-form">
+            <input type="text" id="reg-displayName" placeholder="Nama">
+            <input type="text" id="reg-NIS" placeholder="NIS">
+            <input type="password" id="reg-password" placeholder="Password">
+            <button type="button" onclick="register()">Daftar</button>
+        </form>
+        <button class="next-button" onclick="nextPage('page-login')">Selanjutnya</button>
+    </div>
+    
+    <div class="page" id="page-login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-NIS" placeholder="NIS">
+            <input type="password" id="login-password" placeholder="Password">
+            <button type="button" onclick="login()">Login</button>
+        </form>
+        <button class="next-button" onclick="nextPage('page-check-token')">Selanjutnya</button>
+    </div>
+    
+    <div class="page" id="page-check-token">
+        <h2>Cek Token</h2>
+        <form id="check-token-form">
+            <input type="text" id="token" placeholder="Token">
+            <button type="button" onclick="checkToken()">Cek Token</button>
+        </form>
+        <button class="next-button" onclick="nextPage('page-logout')">Selanjutnya</button>
+    </div>
+    
+    <div class="page" id="page-logout">
+        <h2>Logout</h2>
+        <form id="logout-form">
+            <input type="text" id="logout-token" placeholder="Token">
+            <button type="button" onclick="logout()">Logout</button>
+        </form>
+        <!-- Tidak ada tombol "Selanjutnya" karena ini halaman terakhir -->
+    </div>
+    
+    <div id="response"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
